@@ -1,4 +1,4 @@
-.inputclass {
+input {
   border: 2px solid #5E6C77;
   font-size: 1.5em;
   padding: .25em .5em .3125em;
@@ -7,14 +7,12 @@
   background: transparent;
   -webkit-transition: all .100s;
   transition: all .100s;
-  position: absolute;
-  left: 38%;
-  top: 70%;
+  margin:40%;
 }
 input:focus {
   outline: none;
-  color: #FFFFFF;
-  border-color: #48D1CC;
+  color: #A2ACB3;
+  border-color: #A2ACB3;
 }
 input.keyup {
   color: white;
@@ -34,7 +32,7 @@ body {
           justify-content: center;
 }
 
-.canvasClass {
+canvas {
   position: absolute;
   left: 0;
   right: 0;
@@ -81,6 +79,10 @@ input:focus:-ms-input-placeholder {
 }
 
 html, body {
+  height: 100%;
   overflow: hidden;
-  background: #2F4F4F;
+}
+
+html {
+  background: #282E33;
 }

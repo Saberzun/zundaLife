@@ -1,8 +1,8 @@
 console.clear();
 
 var MAX_LIFE = 50;
-var canvas = document.querySelector('canvas.canvasClass');
-var input = document.querySelector('input.inputclass');
+var canvas = document.querySelector('canvas');
+var input = document.querySelector('input');
 var field = {}
 var hasFocus = false;
 var caret = document.createElement('span');
@@ -425,8 +425,6 @@ function simulate(dimensions, options) {
 
 		// create
 		canvas = document.createElement('canvas');
-		canvas.setAttribute("class","canvasClass");
-
 		document.body.appendChild(canvas);
 
 		// correct canvas size on window resize
