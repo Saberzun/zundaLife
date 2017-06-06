@@ -7,7 +7,9 @@ input {
   background: transparent;
   -webkit-transition: all .100s;
   transition: all .100s;
-  margin:40%;
+  margin-top: 500px;
+  margin-right: 44%;
+  margin-left: 40%;
 }
 input:focus {
   outline: none;
@@ -81,6 +83,7 @@ input:focus:-ms-input-placeholder {
 html, body {
   height: 100%;
   overflow: hidden;
+  justify-content:center;
 }
 
 html {
