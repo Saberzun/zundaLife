@@ -24,11 +24,12 @@ p { margin: 0; }
 }
 
 #container {
+	float: left;
 	width: 320px;
 	height: 320px;
-	right: 120px;
-	bottom: 0px;
-	position: absolute;
+	margin-top: 300px;
+	margin-left: 200px;
+
 
     perspective: 550px;
 	  -webkit-perspective: 550px;
