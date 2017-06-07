@@ -9,7 +9,9 @@
 
 body {background: #ccc url('images/bg_out.png'); color: #7c7873; }
 #pclass {text-shadow:0 1px 0 #fff; font-size:24px;}
-#wrap {width:730px; margin-left:120px; height:800px;float: left;}
+#outer {float: left; width: 70%;}
+#outer_player {float: left; width: 30%;}
+#wrap {width:730px; margin:0 auto; height:800px;}
 #hiclass {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #ede8d9; }
 
 	#form_wrap { overflow:hidden; height:446px; position:relative; top:0px;
@@ -54,6 +56,8 @@ body {background: #ccc url('images/bg_out.png'); color: #7c7873; }
 
 </head>
 <body >
+
+	<div id="outer">
 	<div id="wrap">
 		<h1 id="hiclass">Give you a message</h1>
 		<div id='form_wrap'>
@@ -63,7 +67,10 @@ body {background: #ccc url('images/bg_out.png'); color: #7c7873; }
 		</div>
 	</div>
 
+</div>
 
+
+<div id="outer_player">
 	<div id="container">
 	<canvas id="progress" width="320" height="320"></canvas><!-- progress bar -->
 	<div id="player">
@@ -87,6 +94,7 @@ body {background: #ccc url('images/bg_out.png'); color: #7c7873; }
 		</div><!-- #cover -->
 	</div><!-- #player -->
 	</div><!-- #container -->
+</div>
 
 	<script src="js/index_player.js"></script>
 </body>
