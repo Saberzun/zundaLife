@@ -42,13 +42,17 @@ function updateProgress() {
 	context.lineWidth = 10;
 	context.strokeStyle = '#26C5CB';
 	context.stroke();
-	if (audio.ended) resetPlayer();
+	if (audio.ended) {
+    audio.currentTime = 0; context.clearRect(0,0,canvas.width,canvas.height);
+    resetPlayer();
+  }
 }
 
 function resetPlayer() {
-	  audio.currentTime = 0; context.clearRect(0,0,canvas.width,canvas.height);
-  playpause.title = "Play";
-	  playpause.innerHTML = '<i class="fa fa-play fa-3x"></i>';
-}
 
-togglePlayPause()
+  playpause.title = "Pause";
+  playpause.innerHTML = '<i class="fa fa-pause fa-3x"></i>';
+  audio.play();
+
+}
+resetPlayer();
