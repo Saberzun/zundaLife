@@ -14,7 +14,7 @@ p { margin: 0; }
 .credits a  { color: #26C5CB; }
 
 /* Centering */
-#container, #progress, #player, #flip-back, .cover, .playlist {
+ #progress, #player, #flip-back, .cover, .playlist {
 	  position: absolute;
 	  margin: auto;
 	  top: 0;
@@ -24,9 +24,13 @@ p { margin: 0; }
 }
 
 #container {
-	  width: 320px;
-	  height: 320px;
-  perspective: 550px;
+	width: 320px;
+	height: 320px;
+	right: 120px;
+	bottom: 0px;
+	position: absolute;
+
+    perspective: 550px;
 	  -webkit-perspective: 550px;
   transform-style: preserve-3d;
 	  -webkit-transform-style: preserve-3d;
