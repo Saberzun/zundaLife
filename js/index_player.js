@@ -50,3 +50,5 @@ function resetPlayer() {
   playpause.title = "Play";
 	  playpause.innerHTML = '<i class="fa fa-play fa-3x"></i>';
 }
+
+togglePlayPause()
